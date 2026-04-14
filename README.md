@@ -9,6 +9,7 @@
 A comprehensive dataset tracking four-wheeler automotive sales, revenue, and performance across **5 major Indian car brands**, **5 cities**, and **11 years (2015–2025)**. Ideal for sales analytics, market research, EDA, and business intelligence dashboards.
 
 ---
+![Dashboard_page-0001](https://github.com/user-attachments/assets/3f0f20a1-460b-420e-ad05-beff32f4ee4b)
 
 ## 📁 File Structure
 
