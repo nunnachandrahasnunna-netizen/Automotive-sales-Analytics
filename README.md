@@ -159,44 +159,6 @@ Year  │ Sales Units
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-pip install pandas openpyxl matplotlib seaborn
-```
-
-### Load the Data
-
-```python
-import pandas as pd
-
-df = pd.read_excel('four_wheeler_automotive_india.xlsx', sheet_name='Automotive Data')
-print(df.shape)      # (100, 16)
-print(df.head())
-```
-
-### Quick EDA
-
-```python
-# Revenue by brand
-df.groupby('Brand')['Revenue'].sum().sort_values(ascending=False)
-
-# Sales trend over years
-df.groupby('Year')['Sales_Units'].sum().plot(kind='line', title='Sales Trend')
-
-# Fuel type distribution
-df['Fuel_Type'].value_counts().plot(kind='pie', autopct='%1.1f%%')
-
-# Correlation heatmap
-import seaborn as sns
-numeric_cols = ['Price_INR', 'Sales_Units', 'Revenue', 'Profit', 'Mileage_kmpl', 'Engine_CC']
-sns.heatmap(df[numeric_cols].corr(), annot=True, cmap='coolwarm')
-```
-
----
-
 ## 💡 Potential Use Cases
 
 - 📊 **Sales Dashboard** — Build Power BI / Tableau / Excel dashboards
@@ -205,16 +167,6 @@ sns.heatmap(df[numeric_cols].corr(), annot=True, cmap='coolwarm')
 - 🗺️ **Geo Analysis** — Compare city-wise automotive demand
 - 🏷️ **Pricing Strategy** — Analyse price-to-sales and price-to-rating relationships
 - 🧪 **EDA Practice** — Great beginner-to-intermediate analytics project dataset
-
----
-
-## 📌 Notes
-
-- All monetary values are in **Indian Rupees (INR)**
-- The profit margin is a consistent **20%** across all entries
-- `Unnamed: 16` column is mostly empty; `Unnamed: 17` contains summary statistics
-- The dataset covers **19 unique car models** across all brands
-- `Customer Rating` ranges from **4.1 to 4.9** (out of 5)
 
 ---
 
